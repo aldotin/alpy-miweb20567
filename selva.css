@@ -1,0 +1,85 @@
+/*
+    ---------------------------------------------------
+    Hoja de Estilos para "Danzas de la Selva Peruana"
+    Diseño basado en la naturaleza y la cultura amazónica
+    ---------------------------------------------------
+*/
+
+/* 1. Estilos Generales para el Cuerpo de la Página */
+body {
+    /* Define una fuente y un color de texto base */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    /* Un fondo suave que evoca la neblina de la selva */
+    background-color: #f0f4e8;
+    margin: 0;
+    padding: 0;
+    /* Puedes usar una imagen de fondo para un efecto más inmersivo */
+    /* background-image: url('imagenes/fondo-selva.jpg'); */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+}
+
+/* 2. Estilos del Encabezado (Header) */
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: #ffffff;
+    background-color: #005020; /* Verde bosque */
+    /* Un sombreado sutil para dar la sensación de profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Lalezar', cursive; /* Fuente audaz y con carácter */
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* 3. Estilos del Carrusel de Imágenes (Slideshow) */
+.slideshow {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    /* Crea un marco visual para las imágenes */
+    border: 5px solid #5C4033; /* Marrón terroso */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga */
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Hace que la transición de opacidad sea más suave */
+    transition: opacity 0.5s ease-in-out;
+    /* Asegura que la imagen no se distorsione */
+    object-fit: cover;
+}
+
+/* 4. Adaptación a Dispositivos Móviles (Responsive Design) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .slideshow {
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+}

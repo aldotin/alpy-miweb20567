@@ -1,0 +1,114 @@
+/* Importación de fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+/* Variables CSS para facilitar la gestión de colores y tipografías */
+:root {
+    --color-fondo-principal: #F5F5F5;
+    --color-texto-principal: #333333;
+    --color-acento-calido: #E57373;
+    --color-acento-frio: #64B5F6;
+    --color-resaltar: #FFD54F;
+
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-texto: 'Lato', sans-serif;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: var(--fuente-texto);
+    color: var(--color-texto-principal);
+    background-color: var(--color-fondo-principal);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: var(--color-acento-calido);
+    color: white;
+    padding: 2rem 1rem; /* Aumenta el espacio interno */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sutil sombra */
+}
+
+header h1 {
+    font-family: var(--fuente-titulos);
+    margin-bottom: 1rem;
+    font-size: 2.5rem; /* Título más grande */
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 800px; /* Limita el ancho del texto para mejor lectura */
+    margin: 0 auto; /* Centra el párrafo */
+}
+
+/* Contenedor principal para el contenido */
+main {
+    padding: 2rem;
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 2rem auto; /* Centra el contenido con espacio arriba y abajo */
+    background-color: white; /* Fondo blanco para el contenido principal */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Sección del carrusel de imágenes */
+.slideshow {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.slideshow img {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}
+
+/* Sección de información de la danza (si la implementas) */
+.info-danza {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px dashed var(--color-acento-frio); /* Separador visual */
+}
+
+.info-danza h2 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-acento-calido);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.danza-info {
+    display: flex; /* Para organizar texto e imagen si se añaden */
+    gap: 1.5rem; /* Espacio entre elementos si hay más */
+}
+
+.danza-info p {
+    font-size: 1rem;
+    flex: 1; /* Permite que el párrafo ocupe espacio disponible */
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .info-danza h2 {
+        font-size: 1.8rem;
+    }
+
+    .danza-info {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,95 @@
+/*
+    ---------------------------------------------------
+    Hoja de Estilos para "Danzas de la Costa Peruana"
+    Diseño inspirado en el ritmo y la elegancia del litoral
+    ---------------------------------------------------
+*/
+
+/* 1. Estilos Generales para el Cuerpo de la Página */
+body {
+    /* Define una fuente y un color de texto base */
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    /* Un fondo suave que evoca la arena de la costa */
+    background-color: #F5EFE6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Estilos del Encabezado (Header) */
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: #ffffff;
+    background-color: #3F48CC; /* Azul del océano */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Bebas Neue', cursive; /* Fuente audaz y con carácter */
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* 3. Estilos del Carrusel de Imágenes (Slideshow) */
+.slideshow {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    /* Marco para las imágenes con bordes redondeados */
+    border: 5px solid #F08A5D; /* Naranja cálido */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Transición suave para el cambio de imagen */
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+/* 4. Estilos del Pie de Página (Footer) */
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #B2456A; /* Rosa oscuro elegante */
+    color: #F5EFE6;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* 5. Adaptación a Dispositivos Móviles (Responsive Design) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .slideshow {
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+}
